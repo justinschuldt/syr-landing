@@ -40,9 +40,23 @@ const SEO: React.FC<Props> = ({ children, description = '', title, intl }) => {
             rel="icon"
             href={process.env.GATSBY_SITE_URL + '/favicon.ico'}
           />
-          <link rel="apple-touch-icon" sizes="180x180" href={process.env.GATSBY_SITE_URL + '/apple-touch-icon.png'} />
-          <link rel="icon" type="image/png" sizes="32x32" href={process.env.GATSBY_SITE_URL + '/favicon-32x32.png'} />
-          <link rel="icon" type="image/png" sizes="16x16" href={process.env.GATSBY_SITE_URL + '/favicon-16x16.png'} />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href={process.env.GATSBY_SITE_URL + '/apple-touch-icon.png'}
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href={process.env.GATSBY_SITE_URL + '/favicon-32x32.png'}
+          />
+          <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href={process.env.GATSBY_SITE_URL + '/favicon-16x16.png'}
+          />
           <link
             rel="manifest"
             href={process.env.GATSBY_SITE_URL + '/site.webmanifest'}
