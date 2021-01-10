@@ -17,7 +17,7 @@ const supportedLanguages = [
   },
   {
     label: '中文',
-    languageTag: 'zh'
+    languageTag: 'zh',
   }
 ];
 
