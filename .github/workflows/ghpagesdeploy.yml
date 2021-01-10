@@ -2,7 +2,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -16,6 +16,7 @@ jobs:
         run: |
           npm ci
           GATSBY_SITE_URL=https://syr.community GATSBY_ENVIRONMENT=production npm run build
+
       - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@3.4.2
         with:
