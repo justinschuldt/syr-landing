@@ -36,7 +36,11 @@ const SEO: React.FC<Props> = ({ children, description = '', title, intl }) => {
           <meta property="og:title" content={title} />
           <meta property="og:description" content={metaDescription} />
           <meta property="og:locale" content={intl.locale} />
-          <link rel="icon" href={process.env.GATSBY_SITE_URL + '/favicon.ico'} />
+          <link
+            rel="icon"
+            href={process.env.GATSBY_SITE_URL + '/favicon.ico'}
+          />
+          <link rel="manifest" href="site.webmanifest"></link>
           {children}
         </Helmet>
       )}
