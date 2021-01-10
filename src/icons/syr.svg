@@ -1,0 +1,12 @@
+<svg viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .small { font: italic 13px sans-serif; }
+    .heavy { font: bold 30px;  fill: red; }
+
+    /* Note that the color of the text is set with the    *
+     * fill property, the color property is for HTML only */
+    .Rrrrr { font: italic 40px serif; fill: red; }
+  </style>
+  <text x="0" y="12" class="heavy">Syr</text>
+
+</svg>

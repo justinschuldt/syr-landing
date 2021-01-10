@@ -10,13 +10,10 @@ import {
 import { Layout } from '~/components/Layout';
 import { SEO } from '~/components/SEO';
 
-import { ReactComponent as GatsbyIcon } from '~/icons/gatsby.svg';
-import { ReactComponent as TypeScriptIcon } from '~/icons/typescript.svg';
-import { ReactComponent as StorybookIcon } from '~/icons/storybook.svg';
-import { ReactComponent as GithubIcon } from '~/icons/github.svg';
+import { ReactComponent as SyrIcon } from '~/icons/syr.svg';
 
 const Card = styled.div`
-    min-width: 570px;
+    min-width: 350px;
     padding: 1.5rem;
     text-align: center;
     background-color: #f7fafc;
@@ -33,14 +30,10 @@ const Container = styled.div`
   background-color: #201b21;
 `;
 
-const iconStyles = css`
-  width: 75px;
-`;
-
-const Logo = styled.img`
-  max-width: 75px;
-  margin: 0;
-`;
+const LangLink = styled.a`
+  margin: 6px;
+  color: rgba(255, 255, 255, 0.8);
+`
 
 const Index: React.FC<InjectedIntlProps> = ({ intl }) => {
   return (
@@ -50,33 +43,22 @@ const Index: React.FC<InjectedIntlProps> = ({ intl }) => {
         <Card>
           <div
             css={css`
-              display: flex;
-              justify-content: space-around;
+            display: flex;
+            justify-content: space-around;
             `}
           >
-            <GatsbyIcon css={iconStyles} />
-            <TypeScriptIcon
-              css={css`
-                fill: #007acc;
-                ${iconStyles}
-              `}
-            />
-            <Logo src="/logos/emotion.png" />
-            <StorybookIcon
-              css={css`
-                ${iconStyles}
-              `}
-            />
+            <SyrIcon css={css`
+              width: 120px;
+              margin-right: auto;
+              margin-left: auto;
+              display: inline-block;
+              fill: red;
+              `} />
           </div>
-          <div
-            css={css`
-              padding: 30px 20px 20px;
-            `}
-          >
-            <FormattedMessage id="greeting" />
-          </div>
-          <a
-            href="https://github.com/duncanleung/gatsby-typescript-emotion-storybook"
+
+          {/* TODO - icon & link to the marketplace? */}
+          {/* <a
+            href="https://github.com/justinschuldt/syr-landing"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -92,10 +74,23 @@ const Index: React.FC<InjectedIntlProps> = ({ intl }) => {
                 &:hover {
                   fill: #5d71e4;
                 }
-              `}
-            />
-          </a>
+                `}
+              />
+          </a> */}
+          <FormattedMessage id="greeting" />
         </Card>
+        <div
+          css={css`
+          display: flex;
+          justify-content: space-between;
+          width: 270px;
+          margin-top: 8px;
+          `}
+        >
+          <div><LangLink href="/en" hrefLang="en">English</LangLink></div>
+          <div><LangLink href="/es" hrefLang="es">Español</LangLink></div>
+          <div><LangLink href="/zh" hrefLang="zh">中文</LangLink></div>
+        </div>
       </Container>
     </Layout>
   );
