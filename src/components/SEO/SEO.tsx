@@ -40,7 +40,7 @@ const SEO: React.FC<Props> = ({ children, description = '', title, intl }) => {
             rel="icon"
             href={process.env.GATSBY_SITE_URL + '/favicon.ico'}
           />
-          <link rel="manifest" href="site.webmanifest"></link>
+          <link rel="manifest" href={process.env.GATSBY_SITE_URL + '/site.webmanifest'} />
           {children}
         </Helmet>
       )}
