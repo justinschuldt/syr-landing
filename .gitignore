@@ -73,4 +73,4 @@ yarn-error.log
 .out
 
 # Ensure automated processes do not mix package manager artifacts
-package-lock.json
+yarn-lock.json
