@@ -13,7 +13,7 @@ type Props = {
  * An SEO component that handles all element in the head that can accept
  */
 const SEO: React.FC<Props> = ({ children, description = '', title, intl }) => {
-  const metaDescription = description || 'Welcome to my website';
+  const metaDescription = description || 'Homemade food marketplace';
 
   return (
     <Location>
@@ -36,7 +36,7 @@ const SEO: React.FC<Props> = ({ children, description = '', title, intl }) => {
           <meta property="og:title" content={title} />
           <meta property="og:description" content={metaDescription} />
           <meta property="og:locale" content={intl.locale} />
-
+          <link rel="icon" href={process.env.GATSBY_SITE_URL + '/favicon.ico'} />
           {children}
         </Helmet>
       )}
