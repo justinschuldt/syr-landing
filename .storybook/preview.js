@@ -70,7 +70,7 @@ const getMessages = locale => messages[locale];
 // Set `storybook-addon-intl` configuration (handles `react-intl`)
 setIntlConfig({
   locales,
-  defaultLocale: 'en-us',
+  defaultLocale: 'en',
   getMessages,
 });
 

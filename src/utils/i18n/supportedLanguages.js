@@ -9,12 +9,16 @@ and dependancies can be put in place to allow the node files to import Typescrip
 const supportedLanguages = [
   {
     label: 'English',
-    languageTag: 'en-us',
+    languageTag: 'en',
   },
   {
     label: 'Español',
-    languageTag: 'es-es',
+    languageTag: 'es',
   },
+  {
+    label: '中文',
+    languageTag: 'zh'
+  }
 ];
 
 module.exports = supportedLanguages;

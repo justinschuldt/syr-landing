@@ -4,12 +4,12 @@ import { ThemeProvider } from 'emotion-theming';
 import { render } from '@testing-library/react';
 import { IntlProvider } from 'react-intl';
 
-import * as messages from '~/locales/en-us.json';
+import * as messages from '~/locales/en.json';
 import theme from '../src/theme';
 
 const AllTheProviders: React.FC = ({ children }) => {
   return (
-    <IntlProvider locale="en-us" messages={messages}>
+    <IntlProvider locale="en" messages={messages}>
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </IntlProvider>
   );
