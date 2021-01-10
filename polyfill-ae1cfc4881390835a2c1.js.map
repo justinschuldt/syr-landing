@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./.cache/polyfill-entry.js"],"names":[],"mappings":"2FAAA,mB","file":"polyfill-ae1cfc4881390835a2c1.js","sourcesContent":["import \"gatsby-legacy-polyfills\"\n\nif (process.env.NODE_ENV === `development`) {\n  require(`event-source-polyfill`)\n}\n"],"sourceRoot":""}
